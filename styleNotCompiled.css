@@ -1,0 +1,59 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+section {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
+section form {
+  margin: auto;
+}
+section form .bottom {
+  display: inline-flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+section form input {
+  outline: none;
+  border-radius: 10px;
+  display: block;
+  border: 2px solid #333;
+}
+section form input:not([type=submit]):not([type=checkbox]) {
+  padding: 1%;
+  width: 50%;
+  margin-bottom: 2%;
+}
+section form input:not([type=submit]):not([type=checkbox]):hover {
+  border: 2px #FFBF00 solid;
+}
+section form input[type=checkbox] {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+section form input[type=submit] {
+  width: 25%;
+  display: inline-block;
+  padding: 10px;
+  appearance: none;
+  font-weight: bold;
+  background: none;
+}
+section form input[type=submit]:hover {
+  background-color: #FFBF00;
+  color: #333;
+}
+section .signupSection a {
+  text-decoration: none;
+  color: #333;
+}
+section .signupSection a:hover {
+  color: #FFBF00;
+}

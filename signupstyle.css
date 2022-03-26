@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body section {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
+body section form {
+  margin: auto;
+}
+body section form input {
+  border: 2px solid #333;
+}
+body section form input:not([type=radio]) {
+  outline: none;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 2%;
+  padding: 1%;
+  width: 50%;
+}
+body section form input:not([type=radio]):hover {
+  border: 2px #FFBF00 solid;
+}
+body section form input[type=radio] {
+  display: inline-block;
+  width: 15px;
+  height: 20px;
+}
+body section form input[type=submit] {
+  width: 15%;
+  display: inline-block;
+  padding: 10px;
+  appearance: none;
+  font-weight: bold;
+  background: none;
+}
+body section form input[type=submit]:hover {
+  background-color: #FFBF00;
+  color: #333;
+}

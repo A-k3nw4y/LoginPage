@@ -1,0 +1,24 @@
+doctype html
+head
+    title Creds
+    meta(charset='utf-8')
+    link(rel='stylesheet' href='styleNotCompiled.css')
+section
+    h2 Sign in to you account
+    form(id="signin" name="signinForm" action='#' method='POST')
+        input(type='text' name='username' placeholder='Username')
+        input(type='password' name='password' placeholder='Password')
+        .bottom
+            input(type='submit' name='submit' value='Sign in' onclick="formValidation()")
+            div
+                input(type='checkbox' name='remember')
+                label(for='remember') Remember me...
+        br
+        br
+        br
+        .signupSection
+            span Don&apos;t have an account?  
+            a(href='./signup.html') Sign Up!
+        p username:<strong>lol</strong> password:<strong>lol</strong> ......... BTW
+script(src='signin.js') 
+//- signin.js

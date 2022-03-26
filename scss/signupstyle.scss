@@ -1,0 +1,55 @@
+$defaultColor:#FFBF00;
+$secondaryColor:#333;
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    section {
+        width: 50%;
+        height: 50%;
+        margin: auto;
+
+        form {
+            margin: auto;
+
+            input {
+                border: 2px solid $secondaryColor;
+
+                &:not([type="radio"]) {
+                    outline: none;
+                    border-radius: 10px;
+                    display: block;
+                    margin-bottom: 2%;
+                    padding: 1%;
+                    width: 50%;
+
+                    &:hover {
+                        border: 2px $defaultColor solid;
+                    }
+                }
+
+                &[type="radio"] {
+                    display: inline-block;
+                    width: 15px;
+                    height: 20px;
+                }
+
+                &[type="submit"] {
+                    width: 15%;
+                    display: inline-block;
+                    padding: 10px;
+                    appearance: none;
+                    font-weight: bold;
+                    background: none;
+
+                    &:hover {
+                        background-color: $defaultColor;
+                        color: $secondaryColor
+                    }
+                }
+            }
+        }
+    }
+}

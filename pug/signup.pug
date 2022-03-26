@@ -1,0 +1,23 @@
+doctype html
+head
+    title Creds
+    meta(charset='utf-8')
+    link(rel='stylesheet' href='signupstyle.css')
+body
+    section
+        h2 Create an account
+        form(name='signup' action='#' method='post')
+            input(type="text"  id="name" placeholder="First Name" name="fname")
+            input(type="text" placeholder="Last Name" name="lname")
+            input(type="text" placeholder="Username" name="uname")
+            input(type="password" placeholder="Password" name="passwd")
+            input(type="email" placeholder="E-mail" name="email")
+            label(for="gender") Male
+            input(type="radio" name="gender" value="male")
+            label(for="gender") Female
+            input(type="radio" name="gender" value="female")
+            br
+            p(id="lol") hello thereeeeeeeeeeeee
+            br
+            input(type="submit" name="submit" value="Sign up" onclick="getData()")
+    script(src="script.js") 
